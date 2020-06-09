@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 const Todo = (props) => {
     return (
-        <div>
+        <div className='todo-item'>
             <p onClick={() => {
                 props.dispatch({ type: 'TOGGLE_COMPLETE', payload: props.todo.id })
             }}
-            >&rarr; {props.todo.item}</p>
+            >{props.todo.item}</p>
         </div>
     )
 }

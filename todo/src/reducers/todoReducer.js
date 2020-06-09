@@ -50,11 +50,11 @@ export const reducer = (state, action) => {
                 ...state,
                 todos: [
                     ...state.todos,
-                {
-                    item: action.payload,
-                    completed: false,
-                    id: Date.now()
-                }
+                    {
+                        item: action.payload,
+                        completed: false,
+                        id: Date.now()
+                    }
                 ]
             };
         case 'TOGGLE_COMPLETE':

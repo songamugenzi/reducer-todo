@@ -18,6 +18,7 @@ const TodoForm = (props) => {
                 onChange={handleChanges}
             />
             <button
+                className='add-item'
                 onClick={(e) => {
                     e.preventDefault()
                     props.dispatch({ type: 'ADD_TODO', payload: newTodoText });

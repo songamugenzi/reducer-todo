@@ -5,19 +5,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2d2d38;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* 
+
 .App {
   font-family: sans-serif;
   text-align: center;
   padding: 0 36px;
-  max-width: 665px;
+  max-width: 775px;
   margin: 0 auto;
+  background-color: #2d2d38;
 }
 
 .header {
@@ -27,8 +29,19 @@ code {
   margin: 15px 0;
 }
 
-h1 {
-  text-align: left;
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.add-item {
+  font-size: 16px;
+  color: white;
+  background-color: #E89F64;
+  border-radius: 5px;
+  border: none;
+  width: 120px;
+  height: 40px;
 }
 
 .todo-list {
@@ -39,30 +52,24 @@ h1 {
   margin: 0 auto;
 }
 
-.todo {
-  background-color: darksalmon;
+.todo-item {
+  background-color: #0A6665;
   width: 45%;
   text-align: left;
   margin: 4px 0;
-  padding-left: 8px;
+  padding-left: 6px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-.task.completed {
-  background-color: mediumvioletred;
-  text-decoration: line-through;
-}
-
-form {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
+.todo-item p {
+  color: white;
 }
 
 form > input {
   background-color: #2d2d38;
   border: 0;
-  padding: 6px 0;
+  padding: 6px;
   font-size: 1rem;
   width: 240px;
   outline: 0;
@@ -71,19 +78,20 @@ form > input {
   margin-right: 8px;
 }
 
-button {
-  background-color: #48D1CC;
-  border: 1px solid #48D1CC;
-  color: white;
-  font-size: 16px;
-  padding: 6px 14px;
-}
-
-input::placeholder {
-  color: #FFC0CB;
-  opacity: 1;
+form {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .clr-btn {
+  display: block;
   margin-top: 16px;
-} */
+  font-size: 16px;
+  color: white;
+  background-color: #E89F64;
+  border-radius: 5px;
+  border: none;
+  width: 140px;
+  height: 40px;
+}
