@@ -66,6 +66,10 @@ h2 {
   color: white;
 }
 
+.todo-completed {
+  text-decoration: line-through;
+}
+
 form > input {
   background-color: #2d2d38;
   border: 0;

@@ -6,6 +6,7 @@ const Todo = (props) => {
             <p onClick={() => {
                 props.dispatch({ type: 'TOGGLE_COMPLETE', payload: props.todo.id })
             }}
+            className={`todo${props.todo.completed ? '-completed' : ''}`}
             >{props.todo.item}</p>
         </div>
     )
